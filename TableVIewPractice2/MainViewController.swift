@@ -69,18 +69,10 @@ class MainViewController: UIViewController {
         return
       }
       
-      // 성공했을 때(데이터파싱)
-      do {
-        let decoder = JSONDecoder()
-        let loanDataStore = try decoder.decode(LoanDataStore.self, from: data!)
-        self.loans = loanDataStore.loans
-        
-        OperationQueue.main.addOperation {
-          self.tableView.reloadData()
-        }
-        
-      } catch let error {
-        print(error)
+      self.loans = self.parseJsonData(data: data!)
+
+      OperationQueue.main.addOperation {
+        self.tableView.reloadData()
       }
       
 //      do {
@@ -109,6 +101,18 @@ class MainViewController: UIViewController {
 //        print(error)
 //      }
     }.resume()
+  }
+  
+  func parseJsonData(data: Data) -> [Loan] {
+    // 성공했을 때(데이터파싱)
+    do {
+      let decoder = JSONDecoder()
+      let loanDataStore = try decoder.decode(LoanDataStore.self, from: data)
+      self.loans = loanDataStore.loans
+    } catch let error {
+      print(error)
+    }
+    return loans
   }
   
   // MARK: - Handlers
