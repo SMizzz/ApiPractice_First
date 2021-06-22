@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		02BD10F02680982C0017A1FB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD10EF2680982C0017A1FB /* MainViewController.swift */; };
 		02BD10F3268098750017A1FB /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD10F2268098750017A1FB /* RestaurantCell.swift */; };
 		02BD10F82680A30E0017A1FB /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD10F72680A30E0017A1FB /* Loan.swift */; };
+		02BD11092680BA830017A1FB /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD11082680BA830017A1FB /* BasicCell.swift */; };
+		0CAC598F1743C0F0B3302008 /* Pods_TableVIewPractice2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB16436DD2DF48745E3F2BE /* Pods_TableVIewPractice2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		02BD10EF2680982C0017A1FB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		02BD10F2268098750017A1FB /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		02BD10F72680A30E0017A1FB /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		02BD11082680BA830017A1FB /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
+		0AB16436DD2DF48745E3F2BE /* Pods_TableVIewPractice2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableVIewPractice2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DC1C1E49A360C54134DAB7 /* Pods-TableVIewPractice2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableVIewPractice2.release.xcconfig"; path = "Target Support Files/Pods-TableVIewPractice2/Pods-TableVIewPractice2.release.xcconfig"; sourceTree = "<group>"; };
+		E40C770CCDFB56A0AD9DC524 /* Pods-TableVIewPractice2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableVIewPractice2.debug.xcconfig"; path = "Target Support Files/Pods-TableVIewPractice2/Pods-TableVIewPractice2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAC598F1743C0F0B3302008 /* Pods_TableVIewPractice2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,8 @@
 			children = (
 				02BD10D82680981A0017A1FB /* TableVIewPractice2 */,
 				02BD10D72680981A0017A1FB /* Products */,
+				EDC54EB4C1B9CA632264DA06 /* Pods */,
+				746C35B0CEA6C7FF957BF926 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +74,7 @@
 				02BD10DF2680981C0017A1FB /* Assets.xcassets */,
 				02BD10F72680A30E0017A1FB /* Loan.swift */,
 				02BD10F2268098750017A1FB /* RestaurantCell.swift */,
+				02BD11082680BA830017A1FB /* BasicCell.swift */,
 				02BD10EF2680982C0017A1FB /* MainViewController.swift */,
 				02BD10E42680981C0017A1FB /* LaunchScreen.storyboard */,
 				02BD10E72680981C0017A1FB /* Info.plist */,
@@ -81,6 +91,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		746C35B0CEA6C7FF957BF926 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AB16436DD2DF48745E3F2BE /* Pods_TableVIewPractice2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDC54EB4C1B9CA632264DA06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E40C770CCDFB56A0AD9DC524 /* Pods-TableVIewPractice2.debug.xcconfig */,
+				51DC1C1E49A360C54134DAB7 /* Pods-TableVIewPractice2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02BD10EA2680981C0017A1FB /* Build configuration list for PBXNativeTarget "TableVIewPractice2" */;
 			buildPhases = (
+				6B9E7C1F0E93066B0528E125 /* [CP] Check Pods Manifest.lock */,
 				02BD10D22680981A0017A1FB /* Sources */,
 				02BD10D32680981A0017A1FB /* Frameworks */,
 				02BD10D42680981A0017A1FB /* Resources */,
+				1692F34604DE1100772368F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +175,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1692F34604DE1100772368F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableVIewPractice2/Pods-TableVIewPractice2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableVIewPractice2/Pods-TableVIewPractice2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TableVIewPractice2/Pods-TableVIewPractice2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B9E7C1F0E93066B0528E125 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableVIewPractice2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02BD10D22680981A0017A1FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -155,6 +226,7 @@
 				02BD10F82680A30E0017A1FB /* Loan.swift in Sources */,
 				02BD10F02680982C0017A1FB /* MainViewController.swift in Sources */,
 				02BD10DA2680981A0017A1FB /* AppDelegate.swift in Sources */,
+				02BD11092680BA830017A1FB /* BasicCell.swift in Sources */,
 				02BD10DC2680981A0017A1FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +363,7 @@
 		};
 		02BD10EB2680981C0017A1FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40C770CCDFB56A0AD9DC524 /* Pods-TableVIewPractice2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +385,7 @@
 		};
 		02BD10EC2680981C0017A1FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DC1C1E49A360C54134DAB7 /* Pods-TableVIewPractice2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
